@@ -1,10 +1,8 @@
 //your JS code here. If required.
- function rotateLine() {
-      var line = document.getElementById("line");
-      var rotationAngle = 0;
-      setInterval(function() {
-        rotationAngle += 5;
-        line.style.transform = "rotate(" + rotationAngle + "deg)";
-      }, 50);
-    }
-    rotateLine();
+const line = document.getElementById('line');
+let rotation = 0;
+
+setInterval(() => {
+  rotation += 5;
+  line.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+}, 50);
